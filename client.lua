@@ -15,7 +15,7 @@ local background = "background_darkerblue"
 local opacity = 100
 
 CreateThread(function()
-    RequestStreamedTextureDict('ps_pause', true)
+    RequestStreamedTextureDict("ps_pause", true)
     while not HasStreamedTextureDictLoaded("ps_pause") do
         Wait(100)
     end
@@ -24,7 +24,7 @@ CreateThread(function()
             SetScriptGfxDrawBehindPausemenu(true)
             DrawSprite("ps_pause", background, 0.5, 0.5, 10.0, 10.0, 0, 255, 255, 255, opacity)
         else
-            SetStreamedTextureDictAsNoLongerNeeded('ps_pause')
+            SetStreamedTextureDictAsNoLongerNeeded("ps_pause")
         end
       	Wait(0)
     end
