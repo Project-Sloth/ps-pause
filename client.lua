@@ -6,7 +6,7 @@ function AddTextEntry(k, v)
     Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), k, v)
  end
 
- CreateThread(function()
+CreateThread(function()
     RequestStreamedTextureDict("ps_pause", true)
     while not HasStreamedTextureDictLoaded("ps_pause") do
         Wait(100)
