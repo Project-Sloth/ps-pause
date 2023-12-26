@@ -46,3 +46,25 @@ Config.Header = {
     ["SERVER_TEXT"] = "LeSiiN is cool",
     ["SERVER_DISCORD"] = "YOUR DISCORD HERE"
 }
+
+--Allows you to Change the Colour ( Use this Website: https://rgbacolorpicker.com/ )
+Config.RGBA = {
+    LINE = { -- Line over the Options
+        ["RED"] = 159,
+        ["GREEN"] = 183,
+        ["BLUE"] = 16,
+        ["ALPHA"] = 255,
+    },
+    STYLE = { -- Pause Menu Options
+        ["RED"] = 0,
+        ["GREEN"] = 0,
+        ["BLUE"] = 0,
+        ["ALPHA"] = 186,
+    },
+    WAYPOINT = { -- Waypoint
+        ["RED"] = 164,
+        ["GREEN"] = 76,
+        ["BLUE"] = 242,
+        ["ALPHA"] = 255,
+    },
+}
