@@ -29,6 +29,18 @@ Config.Header = {
     -- LEFT MENU CONFIG
     ["TITLE"] = "Project Sloth",
     ["SUBTITLE"] = "This little Script was made by Jay <3",
+
+    ["MAP"] = "Map",
+    ["GAME"] = "Exit Game",
+    ["LEAVE"] = "Return to Server List",
+    ["QUIT"] = "Return to Desktop",
+    ["INFO"] = "Information",
+    ["STATS"] = "Statistics",
+    ["SETTINGS"] = "Settings",
+    ["GALLERY"] = "Gallery",
+    ["KEYBIND"] = "Main Keybinds",
+    ["EDITOR"] = "Rockstar Editor",
+
     -- RIGHT MENU CONFIG
     ["SERVER_NAME"] = "Project Sloth",
     ["SERVER_TEXT"] = "LeSiiN is cool",
