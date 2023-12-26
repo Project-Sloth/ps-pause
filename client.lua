@@ -22,7 +22,13 @@ CreateThread(function()
             AddTextEntry(Replacer[key], value)
         end
     end
+        
     RequestStreamedTextureDict('ps_pause', true)
+
+    ReplaceHudColourWithRgba( 116 , Config.RGBA.LINE["RED"] , Config.RGBA.LINE["GREEN"] , Config.RGBA.LINE["BLUE"] , Config.RGBA.LINE["ALPHA"]) --LINE ABOVE EACH OPTION
+    ReplaceHudColourWithRgba( 117 , Config.RGBA.STYLE["RED"] , Config.RGBA.STYLE["GREEN"] , Config.RGBA.STYLE["BLUE"] , Config.RGBA.STYLE["ALPHA"]) -- BACKGROUND OF EACH OPTION + BLIPS IN THE LIST
+    ReplaceHudColourWithRgba( 142 , Config.RGBA.WAYPOINT["RED"] , Config.RGBA.WAYPOINT["GREEN"] , Config.RGBA.WAYPOINT["BLUE"] , Config.RGBA.WAYPOINT["ALPHA"]) -- WAYPOINT COLOURS
+
     while not HasStreamedTextureDictLoaded("ps_pause") do
         Wait(100)
     end
